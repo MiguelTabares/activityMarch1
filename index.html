@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="titleContainer">
+        <h1>ACTIVITY MARCH 1</h1>
+    </section>
+    
+    <section class="mainContainer">
+        <section class="cardsContainer">
+
+            <div class="card">
+                <div class="card-body">
+                <h2 class="card-title">VIEW en MySQL</h2>
+                <div class="imgCardContainer">
+                    <img class="img-card" src="./images/viewsMySQL.png" alt="mySQLviews">
+                </div>
+                <p class="card-text">
+                    Las vistas en MySQL son una forma de simplificar y optimizar el acceso a los datos de una o más tablas. Una vista es una tabla virtual que se crea a partir de una consulta SELECT y que se almacena en la base de datos como un objeto. Las vistas tienen la misma estructura de filas y columnas que una tabla normal, pero no contienen los datos en sí, sino que los obtienen de las tablas subyacentes cada vez que se consultan.
+                    <br>
+                    <br>
+                    Una vista en MySQL es una opción que te permite observar los datos de una serie de tablas. La vista parece una tabla virtual que almacena todas las consultas que se realizan sobre las bases de datos. Es por eso que los datos o consultas que se establecen dentro de las vistas no están almacenados como un objeto dentro de las tablas de la base de datos.
+                    <br>
+                    <br>
+                    De esta manera, cuando haces una consulta sobre una vista, te ejecutará la query que has escrito y te guardará la consulta que vas a realizar en lugar de los valores, como cualquier otra de las tablas.
+                    <br>
+                    <br>
+                    Las VIEWS en MySQL son consultas almacenadas que se pueden utilizar como tablas virtuales. Son resultado de una consulta almacenada en la base de datos y se comportan como tablas normales, lo que permite realizar operaciones SELECT, INSERT, UPDATE o DELETE sobre ellas.
+                    <br>
+                    <br>
+                    La instrucción CREATE VIEW crea una nueva vista o reemplaza una vista existente si se proporciona la cláusula OR REPLACE. Si la vista no existe, CREAR O REEMPLAZAR VISTA es lo mismo que CREAR VISTA. Si la vista existe, CREAR O REEMPLAZAR VISTA la reemplaza.
+                    <br>
+                    <br>                    
+                    select_statement es una declaración SELECT que proporciona la definición de la vista. (Al seleccionar desde la vista, se selecciona, de hecho, usando la instrucción SELECT). Select_statement puede seleccionar desde tablas base o desde otras vistas. A partir de MySQL 8.0.19, la declaración SELECT puede usar una declaración VALUES como fuente, o puede reemplazarse con una declaración TABLE, como con CREATE TABLE... SELECT.
+                </p>
+                <a href="https://dev.mysql.com/doc/refman/8.0/en/create-view.html" class="card-link" target="_blank">Ir a la documentación</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                <h2 class="card-title">Procedimientos almacenados</h2>
+                <div class="imgCardContainer">
+                    <img class="img-card" src="./images/storedProcedures.png" alt="storedProcedures">
+                </div>               
+                <p class="card-text">
+                    Los procedimientos almacenados son secuencias de comandos SQL que se almacenan en el servidor de la base de datos. Se utilizan para encapsular lógica empresarial o procesos complejos en la base de datos para facilitar su reutilización y mejorar el rendimiento.
+                    <br>
+                    <br>
+                    Los procedimientos almacenados en MySQL y en muchos otros sistemas de bases de datos relacionales son objetos con nombre que contienen una o más instrucciones dispuestas y luego ejecutadas por la base de datos en una secuencia cuando se llaman. En el ejemplo más básico, un procedimiento almacenado puede guardar una declaración común bajo una rutina reutilizable, como recuperar datos de la base de datos con filtros de uso frecuente.
+                    <br>
+                    <br>
+                    Por ejemplo, podría crear un procedimiento almacenado para recuperar clientes de la tienda en línea que realizaron pedidos dentro del último número de meses determinado. En los escenarios más complejos, los procedimientos almacenados pueden representar programas extensos que describen una lógica empresarial compleja para aplicaciones sólidas.
+                    <br>
+                    <br>
+                    El conjunto de instrucciones de un procedimiento almacenado puede incluir sentencias SQL comunes, como consultas SELECT o INSERT, que devuelven o manipulan datos. Además, los procedimientos almacenados pueden hacer uso de:
+                    <br>
+                    <br>
+                    <ul>
+                        <li>
+                            Parámetros pasados al procedimiento almacenado o devueltos a través de él.
+                            Variables declaradas para procesar los datos recuperados directamente dentro del código del procedimiento.
+                        </li>
+                        <li>
+                            Declaraciones condicionales, que permiten la ejecución de partes del código del procedimiento almacenado dependiendo de ciertas condiciones, como instrucciones IF o CASE.
+                        </li>
+                        <li>
+                            Los bucles, como WHILE, LOOP y REPEAT, permiten ejecutar partes del código varias veces, como por ejemplo para cada fila de un conjunto de datos recuperado.
+                        </li>
+                        <li>
+                            Instrucciones de manejo de errores, como devolver mensajes de error a los usuarios de la base de datos que acceden al procedimiento.
+                        <li>
+                            Llamadas a otros procedimientos almacenados en la base de datos.
+                        </li>
+                    </ul>
+                </p>
+                <a href="https://dev.mysql.com/doc/refman/8.0/en/create-procedure.html" class="card-link" target="_blank">Ir a la documentación</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                        <section class="examplesContainer">
+                            <h2 class="card-title">VIEWS & Stored procedures - Examples</h2>
+                            <h6>Haz click sobre las imágenes para verlas en su tamaño original</h6>
+                            <h5>5 ejemplos de VIEWS</h5>
+                                <a href="https://postimg.cc/LY8MX6tk" target="_blank"><img class="img-card" src="https://i.postimg.cc/W3Mp5dty/view01.png" alt="view01"/></a><br/><br/>
+                                <a href="https://postimg.cc/9zzhH0FC" target="_blank"><img class="img-card" src="https://i.postimg.cc/J754JHfD/view02.png" alt="view02"/></a><br/><br/>
+                                <a href="https://postimg.cc/G9N1LRHY" target="_blank"><img class="img-card" src="https://i.postimg.cc/DyffcyhC/view03.png" alt="view03"/></a><br/><br/>
+                                <a href="https://postimg.cc/N2yq6JP5" target="_blank"><img class="img-card" src="https://i.postimg.cc/qqwJdWsX/view04.png" alt="view04"/></a><br/><br/>                            
+                            <h5>5 ejemplos de Stored procedures</h5>    
+                                <a href="https://postimg.cc/WFYcJL8B" target="_blank"><img class="img-card" src="https://i.postimg.cc/brpyWqtw/stored-Procedures1.png" alt="stored-Procedures1"/></a><br/><br/>
+                                <a href="https://postimages.org/" target="_blank"><img class="img-card" src="https://i.postimg.cc/qv57qf91/stored-Procedures2.png" alt="stored-Procedures2"/></a><br/><br/>
+                                <a href="https://postimages.org/" target="_blank"><img class="img-card" src="https://i.postimg.cc/x1CC9jFk/stored-Procedures3.png" alt="stored-Procedures3"/></a><br/><br/>
+                        </section>
+                    </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                <h2 class="card-title">Diferencia entre SQL y NoSQL</h2>
+                <div class="imgCardContainer">
+                    <img class="img-card" src="./images/sql-vs-nosql.png" alt="SQLvsNoSQL">
+                </div>  
+                <p class="card-text">
+                    Existen 5 diferencias principales: 
+
+                    <ul>
+
+                    
+                        <li>Diferencias estructurales</li>
+
+                        <p>
+                            Las bases de datos SQL y NoSQL tienen propiedades y estructuras bastante diferentes. Una base de datos SQL es esencialmente un formato tabular que se parece un poco a una hoja de cálculo de Excel, donde cada fila representa esencialmente un registro en la base de datos y cada columna es un campo de datos. Las relaciones entre los campos de datos se establecen mediante tablas en la base de datos.
+                        <br>
+                        <br>
+                            Si bien NoSQL puede sonar como lo opuesto a SQL, en realidad es un término general que significa "No solo SQL" y se refiere a bases de datos que no se basan en relaciones tabulares. Las bases de datos NoSQL almacenan activamente datos como documentos, constituyendo registros compuestos por conjuntos de claves o propiedades con valores. Poseen una estructura más flexible que permite el almacenamiento conjunto de elementos relacionados sin necesidad de crear tablas, como es necesario en una base de datos SQL.
+                        </p>
+
+                        <li>Propiedades de la base de datos</li>
+
+                        <p>
+                            Cada tipo de base de datos tiene su propio conjunto de propiedades que la hacen adecuada para ciertos casos de uso. Las bases de datos SQL se adhieren a las propiedades ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad), que aseguran que las transacciones se procesen de manera precisa y confiable. Por el contrario, las bases de datos NoSQL siguen el teorema CAP (Coherencia, Disponibilidad y Tolerancia de Partición), enfatizando la disponibilidad y la tolerancia de partición sobre la consistencia.
+                        <br>
+                        <br>
+                            Al elegir un tipo de base de datos, es crucial considerar cuidadosamente qué propiedades se adaptan a su caso de uso específico. Si la precisión y la confiabilidad de la transacción son críticas, entonces un base de datos SQL con propiedades ACID es el camino a seguir. Sin embargo, si la disponibilidad y la tolerancia a la partición son esenciales, entonces una base de datos NoSQL que siga el teorema CAP es la mejor opción. Comprender estas diferencias en las propiedades de la base de datos puede ayudarlo a tomar una decisión informada que se alinee con las necesidades de su negocio entre SQL y NoSQL.
+                        </p>
+
+                        <li>Escalabilidad y rendimiento</li>
+
+                        <p>
+                            Las bases de datos SQL generalmente emplean escalabilidad horizontal, que incluye fragmentación, donde dividen las tablas en particiones más pequeñas y las distribuyen en varios servidores. Amazon Relational Database Service y otros proveedores utilizan esta popular forma de escalar bases de datos relacionales.
+                        <br>
+                        <br>
+                            Las bases de datos NoSQL utilizan la escalabilidad vertical para aumentar el rendimiento al agregar recursos a un servidor. Con NoSQL, puede escalar su base de datos hacia arriba o hacia abajo según sus requisitos, lo que le brinda más flexibilidad. La escalabilidad vertical es popular para las aplicaciones basadas en la nube que ayudan a administrar recursos como el poder de cómputo y el almacenamiento de manera más eficiente. Como beneficio adicional, este tipo de escalado es menos costoso que la escalabilidad horizontal proporcionada por la mayoría de las bases de datos SQL.
+                        <br>
+                        <br>
+                            En última instancia, la eficiencia de las estructuras de datos utilizadas puede afectar significativamente la escalabilidad más que las diferencias entre las bases de datos SQL y NoSQL, por lo que es crucial comprender el caso de uso específico y planificar en consecuencia.
+                        </p> 
+                        
+                        <li>Diferencias en el idioma </li>
+
+                        <p>
+                            Una de las principales diferencias entre SQL y NoSQL es el lenguaje utilizado. SQL significa Lenguaje de Consulta Estructurado, evolucionando desde la década de 1970 hasta convertirse en un poderoso lenguaje para consultar datos estructurados. NoSQL es un sistema de base de datos más nuevo que no utiliza un lenguaje de consulta estándar pero emplea documentos JSON para el almacenamiento de datos. NoSQL ofrece varios modelos de interacción, desde almacenes de valores clave hasta bases de datos de columnas anchas, lo que permite diferentes formas de interactuar con los datos.
+                        <br>
+                        <br>
+                            Esto significa que cuando trabaje con bases de datos SQL, debe comprender cómo usar su lenguaje de consulta para leer y escribir datos. Con las bases de datos NoSQL, puede interactuar con la base de datos utilizando diferentes métodos. Esto permite una mayor flexibilidad y creatividad en la gestión de sus datos.
+                        </p>
+
+                        <li>Soporte y Comunidades </li>
+
+                        <p>
+                            Cuando se trata de soporte y comunidades, tanto las bases de datos SQL como las NoSQL tienen amplios recursos. Sin embargo, debido a su popularidad y al hecho de que existe desde la década de 1970, SQL tiene un soporte más amplio y una comunidad más grande. En consecuencia, encontrar profesionales con experiencia que puedan trabajar con SQL puede ser más fácil que encontrar a aquellos con experiencia en bases de datos NoSQL. Además, muchas universidades enseñan SQL en su plan de estudios de Ciencias de la Computación en comparación con muy pocas que enseñan NoSQL.
+                        <br>
+                        <br>
+                            Por otro lado, muchas bases de datos NoSQL son de código abierto o propietarias y ofrecen una gran cantidad de documentación valiosa. Esta rica documentación facilita que los desarrolladores e ingenieros se pongan al día con NoSQL. A medida que pasa el tiempo y más proyectos utilizan bases de datos NoSQL, la industria verá un crecimiento en profesionales experimentados. Las grandes empresas de tecnología como MongoDB ofrecen servicios de expertos, y otras empresas ofrecen programas de capacitación para cerrar las brechas de conocimiento al cambiar de tecnología.
+                        </p>                                   
+                    </ul>   
+                </p>
+                <a href="https://www.astera.com/es/knowledge-center/sql-vs-nosql/" class="card-link" target="_blank">Ir a la fuente</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                <h2 class="card-title">Mongo DB</h2>
+                <div class="imgCardContainer">
+                    <img class="img-card" src="./images/mongoDB.png" alt="mongoDB">
+                </div> 
+                <p class="card-text">
+                    MongoDB es un sistema de gestión de bases de datos NoSQL orientado a documentos. Utiliza un formato de almacenamiento de documentos similar a JSON, lo que lo hace flexible y escalable.
+                    <br>
+                    <br>
+                    MongoDB es una base de datos de documentos diseñada para facilitar el desarrollo y escalado de aplicaciones.
+                    <br>
+                    <br>
+                    MongoDB almacena datos en documentos BSON. BSON es una representación binaria de documentos JSON (JavaScript Object Notation). Cuando lea la documentación de MongoDB, verá con frecuencia el término "documento", pero puedes pensar en un documento simplemente como un objeto JavaScript. Para aquellos que vienen del mundo SQL, puedes pensar en un documento como algo equivalente a una fila.
+                    <br>
+                    <br>
+                    En MongoDB, los datos se organizan y almacenan en forma de documentos. Un documento es una estructura de datos que puede contener uno o varios pares de clave-valor, similar a un objeto JSON (JavaScript Object Notation). Cada documento en MongoDB se almacena en una colección, que es análoga a una tabla en una base de datos relacional.
+                    
+                    Puede ejecutar MongoDB en los siguientes entornos:
+
+                    <ul>
+                        <li>
+                            MongoDB Atlas:
+                            <p>
+                            El servicio totalmente gestionado para implementaciones de MongoDB en la nube.
+                            MongoDB Atlas is an integrated suite of data services centered around a cloud database designed to accelerate and simplify how you build with data. Build faster and build smarter with a developer data platform that helps solve your data challenges.
+                            </p>
+                        </li>
+                        <li>
+                            MongoDB Enterprise:
+                            <p>
+                                La versión autogestionada y basada en suscripción de MongoDB
+                            </p>
+                        </li> 
+                        <li>
+                            Comunidad MongoDB:
+                            <p>
+                                La versión fuente disponible, de uso gratuito y autoadministrable de MongoDB
+                            </p>
+                        </li>                                              
+                    </ul>
+
+                </p>
+                <a href="https://www.mongodb.com/docs/manual/" class="card-link" target="_blank">Ir a la documentación</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                <h2 class="card-title">Operaciones CRUD en MongoDB</h2>
+                <h6 style="text-align: center;">Haz click sobre las imágenes para verlas en su tamaño original</h6>                
+                <div class="imgCardContainerCRUD">
+                    <a href="https://postimages.org/" target="_blank"><img class="img-card" src="https://i.postimg.cc/jjpFFXZV/crud-Opetarions-Mongo-DB01.png" alt="crud-Opetarions-Mongo-DB01"/></a><br/><br/>
+                    <a href="https://postimages.org/" target="_blank"><img class="img-card" src="https://i.postimg.cc/YqMJ7dkM/crud-Opetarions-Mongo-DB02.png" alt="crud-Opetarions-Mongo-DB02"/></a><br/><br/>
+                    <a href="https://postimages.org/" target="_blank"><img class="img-card" src="https://i.postimg.cc/GmpV89Hf/crud-Opetarions-Mongo-DB03.png" alt="crud-Opetarions-Mongo-DB03"/></a><br/><br/>
+                    <a href="https://postimages.org/" target="_blank"><img class="img-card" src="https://i.postimg.cc/TPLs0Sjq/crud-Opetarions-Mongo-DB04.png" alt="crud-Opetarions-Mongo-DB04"/></a><br/><br/>
+                    <a href="https://postimages.org/" target="_blank"><img class="img-card" src="https://i.postimg.cc/SscvFMvn/crud-Opetarions-Mongo-DB05.png" alt="crud-Opetarions-Mongo-DB05"/></a><br/><br/>
+                    <a href="https://postimages.org/" target="_blank"><img class="img-card" src="https://i.postimg.cc/jSk9zKfS/crud-Opetarions-Mongo-DB06.png" alt="crud-Opetarions-Mongo-DB06"/></a><br/><br/>
+                </div>                    
+            </div>
+        </section>
+    </section>
+
+    <script src="./mongoDB/mongoExample.js" type="module"></script>
+    <script src="./mongoDB/mongoExampleConnection.js" type="module"></script>
+
+</body>
+</html>
